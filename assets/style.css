@@ -1,0 +1,17 @@
+.das-title {
+  font-size: 4rem;
+}
+.container-tabel {
+  width: 80%;
+  margin: 20px;
+}
+.btn-add {
+  float: right;
+}
+.btn-pagination {
+  float: right;
+}
+#btn-search {
+  float: right;
+  padding-left: 20px;
+}

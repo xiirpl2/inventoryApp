@@ -51,59 +51,74 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="card">
+            
             <div class="row p-2">
               <div class="col-md-9">
                 <h6 class="card-title">Peminjaman Barang</h6>
               </div>
+            
               <div class="col-md-3">
                 <a href="tabel-peminjaman.php"><button class="btn btn-info text-white"><i class="bi bi-reply-fill"></i> Kembali</button></a>
               </div>
             </div>
+
             <div class="card-body">
-              <div class="form-group">
-                <label for="custName" class="form-label">Nama Peminjam</label>
-                <input type="text" class="form-control" name="" />
-              </div>
-              <div class="form-group">
-                <label for="custName" class="form-label">Kelas</label>
-                <input type="text" class="form-control" name="" />
-              </div>
+              <form action="proses-insert-pinjam.php" method="POST">
                 <div class="form-group">
-                <label for="custName" class="form-label">Alat Yang Dipinjam</label>
-                <input type="text" class="form-control" name="" />
-              </div>
+                    <label for="custName" class="form-label">Nama Peminjam</label>
+                    <input type="text" class="form-control" name="nama_peminjam" />
+                </div>
+            
                 <div class="form-group">
-                <label for="custName" class="form-label">QTY</label>
-                <input type="text" class="form-control" name="" />
-              </div>
+                    <label for="custName" class="form-label">Kelas</label>
+                    <input type="text" class="form-control" name="kelas" />
+                </div>
+                
                 <div class="form-group">
-                <label for="custName" class="form-label">Tgl.Pinjam</label>
-                <input type="text" class="form-control" name="" placeholder="12/09/21" />
-              </div>
+                    <label for="custName" class="form-label">Alat Yang Dipinjam</label>
+                    <input type="text" class="form-control" name="alat_dipinjam" />
+                </div>
+              
                 <div class="form-group">
-                <label for="custName" class="form-label">Tgl.Kembali</label>
-                <input type="text" class="form-control" name="" placeholder="12/09/21" />
-              </div>
-              <div class="form-group">
-                <label for="custName" class="form-label">Status</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">..</option>
-                  <option value="2">...</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="custName" class="form-label">No.Hp</label>
-                <input type="text" class="form-control" name="" />
-              </div>
-              <div class="form-group">
-                <label for="custName" class="form-label">Keterangan(Opsional)</label>
-                <input type="text" class="form-control" name="" />
-              </div>
-              </div>
+                    <label for="custName" class="form-label">QTY</label>
+                    <input type="text" class="form-control" name="qty" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="custName" class="form-label">Tgl.Pinjam</label>
+                    <input type="text" class="form-control" name="tgl_pinjam" placeholder="12/09/21" />
+                </div>
+          
+                <div class="form-group">
+                    <label for="custName" class="form-label">Tgl.Kembali</label>
+                    <input type="text" class="form-control" name="tgl_kembali" placeholder="12/09/21" />
+                </div>
+          
+                <div class="form-group">
+                    <label for="custName" class="form-label">Status</label>
+                    <select class="form-select" aria-label="Default select example" name="status">
+                      <option selected>Open this select menu</option>
+                      <option value="1">dipinjam</option>
+                      <option value="2">dikembalikan</option>
+                      <option value="2">telat</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="custName" class="form-label">No.Hp</label>
+                    <input type="text" class="form-control" name="no_hp" />
+                </div>
+              
+                <div class="form-group">
+                    <label for="custName" class="form-label">Keterangan(Opsional)</label>
+                    <input type="text" class="form-control" name="keterangan" />
+                </div>
             </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-primary">Simpan</button>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
+                </div>
+              </form>
+            </div>
             </div>
           </div>
         </div>

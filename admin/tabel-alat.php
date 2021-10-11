@@ -110,7 +110,7 @@
                       echo "<th>".$hasil['thn_pembuatan']."</th>";
                       echo "<th>".$hasil['kode_barang']."</th>";
                       echo "<th>".$hasil['jml_barang']."</th>";
-                      echo "<th>".$hasil['harga']."</th>";
+                      echo "<th>"."Rp.".$hasil['harga']."</th>";
                       echo "<th>".$hasil['keadaan']."</th>";
                       echo "<th><a href='edit_tabel_alat.php'<button type='button' class='btn btn-primary'><i class='bi bi-pencil-fill'></i></button></th>";
                       echo "<th><a href=\"proses_hapus.php?id=$id\""."onClick=\"return confirm('Hapus Data?')\""."><button type='button' class='btn btn-danger'><i class='bi bi-trash-fill'></i></button></a></th>";

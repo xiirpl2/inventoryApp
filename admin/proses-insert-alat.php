@@ -4,7 +4,7 @@
   if (isset($_POST['submit'])) {
     $no=$_POST['no'];
     $kode=$_POST['kode_barang'];
-    $nama=$_POST['nama_barang'];
+    $nama_barang=$_POST['nama_barang'];
     $merk=$_POST['merk'];
     $noseri=$_POST['no_serial'];
     $bahan=$_POST['bahan'];
@@ -13,7 +13,7 @@
     $harga=$_POST['harga'];
     $keadaan=$_POST['keadaan'];
 
-    mysqli_query($konek,"insert into data_alat(no,kode_barang,nama_barang,merk,no_serial,bahan,thn_pembuatan,jml_barang,harga,keadaan) values ('$no','$kode','$nama','$merk','$noseri','$bahan','$thn','$jml','$harga','$keadaan')")or die (mysqli_error($konek));
+    mysqli_query($konek,"insert into data_alat(no,kode_barang,nama_barang,merk,no_serial,bahan,thn_pembuatan,jml_barang,harga,keadaan) values ('$no','$kode','$nama_barang','$merk','$noseri','$bahan','$thn','$jml','$harga','$keadaan')")or die (mysqli_error($konek));
     header('Location:tabel-alat.php');
   }
 ?>
